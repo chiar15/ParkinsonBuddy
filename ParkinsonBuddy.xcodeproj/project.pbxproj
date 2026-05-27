@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F44F81229B7F7DE00F196ED /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F44F80F29B7F7CE00F196ED /* ResearchKit.framework */; };
+		3F44F81329B7F7DE00F196ED /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F44F80F29B7F7CE00F196ED /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F5C62EF29D5717C00866A2F /* ManualFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5C62EE29D5717C00866A2F /* ManualFetch.swift */; };
+		3F83733529E4A9B700E6D84D /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 3F83733429E4A9B700E6D84D /* SwiftUICharts */; };
+		3F83739029E7045400E6D84D /* MonthPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F83738E29E7045400E6D84D /* MonthPickerView.swift */; };
+		3F83739529E7049600E6D84D /* MonthYearWheelPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 3F83739429E7049600E6D84D /* MonthYearWheelPicker */; };
+		3F83739729E70A9200E6D84D /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F83739629E70A9200E6D84D /* Charts.swift */; };
+		3F83739D29E7DDF400E6D84D /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F83739C29E7DDF400E6D84D /* About.swift */; };
+		3FA30FD82A09091300DFCCED /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA30FD72A09091300DFCCED /* OverviewViewController.swift */; };
+		3FA30FDA2A09096F00DFCCED /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA30FD92A09096F00DFCCED /* ListView.swift */; };
+		D30EA84F29A7CEA8006C7970 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30EA84E29A7CEA8006C7970 /* HealthKit.framework */; };
+		D30EA85A29B61004006C7970 /* OCKAnyEvent+Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30EA85929B61004006C7970 /* OCKAnyEvent+Answer.swift */; };
+		D313478D29A7CA69006AD561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D313478C29A7CA69006AD561 /* AppDelegate.swift */; };
+		D313478F29A7CA69006AD561 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D313478E29A7CA69006AD561 /* SceneDelegate.swift */; };
+		D313479129A7CA69006AD561 /* CareFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D313479029A7CA69006AD561 /* CareFeedViewController.swift */; };
+		D313479629A7CA6A006AD561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D313479529A7CA6A006AD561 /* Assets.xcassets */; };
+		D313479929A7CA6A006AD561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D313479729A7CA6A006AD561 /* LaunchScreen.storyboard */; };
+		D31347A429A7CA6B006AD561 /* ParkinsonBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31347A329A7CA6B006AD561 /* ParkinsonBuddyTests.swift */; };
+		D31347AE29A7CA6B006AD561 /* ParkinsonBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31347AD29A7CA6B006AD561 /* ParkinsonBuddyUITests.swift */; };
+		D31347B029A7CA6B006AD561 /* ParkinsonBuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31347AF29A7CA6B006AD561 /* ParkinsonBuddyUITestsLaunchTests.swift */; };
+		D31347C829A7CADE006AD561 /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = D31347C729A7CADE006AD561 /* CareKit */; };
+		D31347CA29A7CADE006AD561 /* CareKitFHIR in Frameworks */ = {isa = PBXBuildFile; productRef = D31347C929A7CADE006AD561 /* CareKitFHIR */; };
+		D31347CC29A7CADE006AD561 /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = D31347CB29A7CADE006AD561 /* CareKitStore */; };
+		D31347CE29A7CADE006AD561 /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = D31347CD29A7CADE006AD561 /* CareKitUI */; };
+		D31347D129A7CB54006AD561 /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31347D029A7CB54006AD561 /* InsightsViewController.swift */; };
+		D31347D429A7CBA2006AD561 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31347D329A7CBA2006AD561 /* Tasks.swift */; };
+		D31347D629A7CBE5006AD561 /* Surveys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31347D529A7CBE5006AD561 /* Surveys.swift */; };
+		D31347D829A7CC0A006AD561 /* Consent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31347D729A7CC0A006AD561 /* Consent.swift */; };
+		D31347DC29A7CC97006AD561 /* CustomSurveyTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31347DB29A7CC97006AD561 /* CustomSurveyTaskViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F44F80E29B7F7CE00F196ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F44F80829B7F7CE00F196ED /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		3F44F81029B7F7CE00F196ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F44F80829B7F7CE00F196ED /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		D31347A029A7CA6B006AD561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D313478129A7CA69006AD561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D313478829A7CA69006AD561;
+			remoteInfo = ParkinsonBuddy;
+		};
+		D31347AA29A7CA6B006AD561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D313478129A7CA69006AD561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D313478829A7CA69006AD561;
+			remoteInfo = ParkinsonBuddy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3FA30FEA2A0A49A600DFCCED /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30EA84D29A7CEA3006C7970 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3F44F81329B7F7DE00F196ED /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3F44F80829B7F7CE00F196ED /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../Downloads/ResearchKit-main/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		3F5C62EE29D5717C00866A2F /* ManualFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualFetch.swift; sourceTree = "<group>"; };
+		3F83738E29E7045400E6D84D /* MonthPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthPickerView.swift; sourceTree = "<group>"; };
+		3F83739629E70A9200E6D84D /* Charts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
+		3F83739C29E7DDF400E6D84D /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		3FA30FD72A09091300DFCCED /* OverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+		3FA30FD92A09096F00DFCCED /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		3FA30FE12A0A49A600DFCCED /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		3FA30FE32A0A49A600DFCCED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA30FEB2A0A4AF600DFCCED /* NotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationService.entitlements; sourceTree = "<group>"; };
+		D30EA84E29A7CEA8006C7970 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		D30EA85029A7D1B8006C7970 /* ParkinsonBuddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ParkinsonBuddy.entitlements; sourceTree = "<group>"; };
+		D30EA85929B61004006C7970 /* OCKAnyEvent+Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKAnyEvent+Answer.swift"; sourceTree = "<group>"; };
+		D313478929A7CA69006AD561 /* ParkinsonBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkinsonBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D313478C29A7CA69006AD561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D313478E29A7CA69006AD561 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D313479029A7CA69006AD561 /* CareFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareFeedViewController.swift; sourceTree = "<group>"; };
+		D313479529A7CA6A006AD561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D313479829A7CA6A006AD561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D313479A29A7CA6A006AD561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D313479F29A7CA6B006AD561 /* ParkinsonBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkinsonBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31347A329A7CA6B006AD561 /* ParkinsonBuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkinsonBuddyTests.swift; sourceTree = "<group>"; };
+		D31347A929A7CA6B006AD561 /* ParkinsonBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkinsonBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D31347AD29A7CA6B006AD561 /* ParkinsonBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkinsonBuddyUITests.swift; sourceTree = "<group>"; };
+		D31347AF29A7CA6B006AD561 /* ParkinsonBuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkinsonBuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D31347D029A7CB54006AD561 /* InsightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
+		D31347D329A7CBA2006AD561 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		D31347D529A7CBE5006AD561 /* Surveys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Surveys.swift; sourceTree = "<group>"; };
+		D31347D729A7CC0A006AD561 /* Consent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consent.swift; sourceTree = "<group>"; };
+		D31347DB29A7CC97006AD561 /* CustomSurveyTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSurveyTaskViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D313478629A7CA69006AD561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31347C829A7CADE006AD561 /* CareKit in Frameworks */,
+				3F83733529E4A9B700E6D84D /* SwiftUICharts in Frameworks */,
+				D31347CA29A7CADE006AD561 /* CareKitFHIR in Frameworks */,
+				3F44F81229B7F7DE00F196ED /* ResearchKit.framework in Frameworks */,
+				D31347CE29A7CADE006AD561 /* CareKitUI in Frameworks */,
+				D30EA84F29A7CEA8006C7970 /* HealthKit.framework in Frameworks */,
+				3F83739529E7049600E6D84D /* MonthYearWheelPicker in Frameworks */,
+				D31347CC29A7CADE006AD561 /* CareKitStore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D313479C29A7CA6B006AD561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31347A629A7CA6B006AD561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F44F80929B7F7CE00F196ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F44F80F29B7F7CE00F196ED /* ResearchKit.framework */,
+				3F44F81129B7F7CE00F196ED /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FA30FE02A0A49A600DFCCED /* NotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				3FA30FEB2A0A4AF600DFCCED /* NotificationService.entitlements */,
+				3FA30FE12A0A49A600DFCCED /* NotificationService.swift */,
+				3FA30FE32A0A49A600DFCCED /* Info.plist */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
+		D30EA84A29A7CEA3006C7970 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D30EA84E29A7CEA8006C7970 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D313478029A7CA69006AD561 = {
+			isa = PBXGroup;
+			children = (
+				3F44F80829B7F7CE00F196ED /* ResearchKit.xcodeproj */,
+				D313478B29A7CA69006AD561 /* ParkinsonBuddy */,
+				D31347A229A7CA6B006AD561 /* ParkinsonBuddyTests */,
+				D31347AC29A7CA6B006AD561 /* ParkinsonBuddyUITests */,
+				3FA30FE02A0A49A600DFCCED /* NotificationService */,
+				D313478A29A7CA69006AD561 /* Products */,
+				D30EA84A29A7CEA3006C7970 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D313478A29A7CA69006AD561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D313478929A7CA69006AD561 /* ParkinsonBuddy.app */,
+				D313479F29A7CA6B006AD561 /* ParkinsonBuddyTests.xctest */,
+				D31347A929A7CA6B006AD561 /* ParkinsonBuddyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D313478B29A7CA69006AD561 /* ParkinsonBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				D30EA85029A7D1B8006C7970 /* ParkinsonBuddy.entitlements */,
+				D31347D229A7CB6D006AD561 /* Supporting Files */,
+				D31347CF29A7CB14006AD561 /* Controller */,
+				D313478C29A7CA69006AD561 /* AppDelegate.swift */,
+				D313478E29A7CA69006AD561 /* SceneDelegate.swift */,
+				D313479529A7CA6A006AD561 /* Assets.xcassets */,
+				D313479729A7CA6A006AD561 /* LaunchScreen.storyboard */,
+				D313479A29A7CA6A006AD561 /* Info.plist */,
+			);
+			path = ParkinsonBuddy;
+			sourceTree = "<group>";
+		};
+		D31347A229A7CA6B006AD561 /* ParkinsonBuddyTests */ = {
+			isa = PBXGroup;
+			children = (
+				D31347A329A7CA6B006AD561 /* ParkinsonBuddyTests.swift */,
+			);
+			path = ParkinsonBuddyTests;
+			sourceTree = "<group>";
+		};
+		D31347AC29A7CA6B006AD561 /* ParkinsonBuddyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D31347AD29A7CA6B006AD561 /* ParkinsonBuddyUITests.swift */,
+				D31347AF29A7CA6B006AD561 /* ParkinsonBuddyUITestsLaunchTests.swift */,
+			);
+			path = ParkinsonBuddyUITests;
+			sourceTree = "<group>";
+		};
+		D31347CF29A7CB14006AD561 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FA30FD72A09091300DFCCED /* OverviewViewController.swift */,
+				D313479029A7CA69006AD561 /* CareFeedViewController.swift */,
+				D31347D029A7CB54006AD561 /* InsightsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D31347D229A7CB6D006AD561 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FA30FD92A09096F00DFCCED /* ListView.swift */,
+				3F83739C29E7DDF400E6D84D /* About.swift */,
+				3F83739629E70A9200E6D84D /* Charts.swift */,
+				3F83738E29E7045400E6D84D /* MonthPickerView.swift */,
+				D31347D329A7CBA2006AD561 /* Tasks.swift */,
+				D31347D529A7CBE5006AD561 /* Surveys.swift */,
+				D31347D729A7CC0A006AD561 /* Consent.swift */,
+				3F5C62EE29D5717C00866A2F /* ManualFetch.swift */,
+				D31347DB29A7CC97006AD561 /* CustomSurveyTaskViewController.swift */,
+				D30EA85929B61004006C7970 /* OCKAnyEvent+Answer.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D313478829A7CA69006AD561 /* ParkinsonBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31347B329A7CA6B006AD561 /* Build configuration list for PBXNativeTarget "ParkinsonBuddy" */;
+			buildPhases = (
+				D313478529A7CA69006AD561 /* Sources */,
+				D313478629A7CA69006AD561 /* Frameworks */,
+				D313478729A7CA69006AD561 /* Resources */,
+				D30EA84D29A7CEA3006C7970 /* Embed Frameworks */,
+				3FA30FEA2A0A49A600DFCCED /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParkinsonBuddy;
+			packageProductDependencies = (
+				D31347C729A7CADE006AD561 /* CareKit */,
+				D31347C929A7CADE006AD561 /* CareKitFHIR */,
+				D31347CB29A7CADE006AD561 /* CareKitStore */,
+				D31347CD29A7CADE006AD561 /* CareKitUI */,
+				3F83733429E4A9B700E6D84D /* SwiftUICharts */,
+				3F83739429E7049600E6D84D /* MonthYearWheelPicker */,
+			);
+			productName = ParkinsonBuddy;
+			productReference = D313478929A7CA69006AD561 /* ParkinsonBuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D313479E29A7CA6B006AD561 /* ParkinsonBuddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31347B629A7CA6B006AD561 /* Build configuration list for PBXNativeTarget "ParkinsonBuddyTests" */;
+			buildPhases = (
+				D313479B29A7CA6B006AD561 /* Sources */,
+				D313479C29A7CA6B006AD561 /* Frameworks */,
+				D313479D29A7CA6B006AD561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D31347A129A7CA6B006AD561 /* PBXTargetDependency */,
+			);
+			name = ParkinsonBuddyTests;
+			productName = ParkinsonBuddyTests;
+			productReference = D313479F29A7CA6B006AD561 /* ParkinsonBuddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D31347A829A7CA6B006AD561 /* ParkinsonBuddyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31347B929A7CA6B006AD561 /* Build configuration list for PBXNativeTarget "ParkinsonBuddyUITests" */;
+			buildPhases = (
+				D31347A529A7CA6B006AD561 /* Sources */,
+				D31347A629A7CA6B006AD561 /* Frameworks */,
+				D31347A729A7CA6B006AD561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D31347AB29A7CA6B006AD561 /* PBXTargetDependency */,
+			);
+			name = ParkinsonBuddyUITests;
+			productName = ParkinsonBuddyUITests;
+			productReference = D31347A929A7CA6B006AD561 /* ParkinsonBuddyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D313478129A7CA69006AD561 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D313478829A7CA69006AD561 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					D313479E29A7CA6B006AD561 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D313478829A7CA69006AD561;
+					};
+					D31347A829A7CA6B006AD561 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D313478829A7CA69006AD561;
+					};
+				};
+			};
+			buildConfigurationList = D313478429A7CA69006AD561 /* Build configuration list for PBXProject "ParkinsonBuddy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D313478029A7CA69006AD561;
+			packageReferences = (
+				D31347C629A7CADE006AD561 /* XCRemoteSwiftPackageReference "CareKit" */,
+				3F83733329E4A9B700E6D84D /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+				3F83739329E7049600E6D84D /* XCRemoteSwiftPackageReference "MonthYearWheelPicker" */,
+			);
+			productRefGroup = D313478A29A7CA69006AD561 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3F44F80929B7F7CE00F196ED /* Products */;
+					ProjectRef = 3F44F80829B7F7CE00F196ED /* ResearchKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D313478829A7CA69006AD561 /* ParkinsonBuddy */,
+				D313479E29A7CA6B006AD561 /* ParkinsonBuddyTests */,
+				D31347A829A7CA6B006AD561 /* ParkinsonBuddyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3F44F80F29B7F7CE00F196ED /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 3F44F80E29B7F7CE00F196ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3F44F81129B7F7CE00F196ED /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 3F44F81029B7F7CE00F196ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D313478729A7CA69006AD561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D313479929A7CA6A006AD561 /* LaunchScreen.storyboard in Resources */,
+				D313479629A7CA6A006AD561 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D313479D29A7CA6B006AD561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31347A729A7CA6B006AD561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D313478529A7CA69006AD561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D313479129A7CA69006AD561 /* CareFeedViewController.swift in Sources */,
+				3F83739029E7045400E6D84D /* MonthPickerView.swift in Sources */,
+				3FA30FDA2A09096F00DFCCED /* ListView.swift in Sources */,
+				3FA30FD82A09091300DFCCED /* OverviewViewController.swift in Sources */,
+				D31347D629A7CBE5006AD561 /* Surveys.swift in Sources */,
+				D31347D829A7CC0A006AD561 /* Consent.swift in Sources */,
+				D31347DC29A7CC97006AD561 /* CustomSurveyTaskViewController.swift in Sources */,
+				D30EA85A29B61004006C7970 /* OCKAnyEvent+Answer.swift in Sources */,
+				D313478D29A7CA69006AD561 /* AppDelegate.swift in Sources */,
+				3F5C62EF29D5717C00866A2F /* ManualFetch.swift in Sources */,
+				D313478F29A7CA69006AD561 /* SceneDelegate.swift in Sources */,
+				D31347D429A7CBA2006AD561 /* Tasks.swift in Sources */,
+				3F83739729E70A9200E6D84D /* Charts.swift in Sources */,
+				D31347D129A7CB54006AD561 /* InsightsViewController.swift in Sources */,
+				3F83739D29E7DDF400E6D84D /* About.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D313479B29A7CA6B006AD561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31347A429A7CA6B006AD561 /* ParkinsonBuddyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D31347A529A7CA6B006AD561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31347AE29A7CA6B006AD561 /* ParkinsonBuddyUITests.swift in Sources */,
+				D31347B029A7CA6B006AD561 /* ParkinsonBuddyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D31347A129A7CA6B006AD561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D313478829A7CA69006AD561 /* ParkinsonBuddy */;
+			targetProxy = D31347A029A7CA6B006AD561 /* PBXContainerItemProxy */;
+		};
+		D31347AB29A7CA6B006AD561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D313478829A7CA69006AD561 /* ParkinsonBuddy */;
+			targetProxy = D31347AA29A7CA6B006AD561 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D313479729A7CA6A006AD561 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D313479829A7CA6A006AD561 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D31347B129A7CA6B006AD561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D31347B229A7CA6B006AD561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D31347B429A7CA6B006AD561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ParkinsonBuddy/ParkinsonBuddy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87NPPGT4FG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParkinsonBuddy/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Recover reads your HealthKit data during certain tasks.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Recover updates your HealthKit data during certain tasks.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Recover would like to record device motion to assess your range of motion";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.ParkinsonBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D31347B529A7CA6B006AD561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ParkinsonBuddy/ParkinsonBuddy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87NPPGT4FG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParkinsonBuddy/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Recover reads your HealthKit data during certain tasks.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Recover updates your HealthKit data during certain tasks.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Recover would like to record device motion to assess your range of motion";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.ParkinsonBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D31347B729A7CA6B006AD561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DF4T739BBZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.ParkinsonBuddyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkinsonBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ParkinsonBuddy";
+			};
+			name = Debug;
+		};
+		D31347B829A7CA6B006AD561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DF4T739BBZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.ParkinsonBuddyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkinsonBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ParkinsonBuddy";
+			};
+			name = Release;
+		};
+		D31347BA29A7CA6B006AD561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DF4T739BBZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.ParkinsonBuddyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParkinsonBuddy;
+			};
+			name = Debug;
+		};
+		D31347BB29A7CA6B006AD561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DF4T739BBZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.ParkinsonBuddyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParkinsonBuddy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D313478429A7CA69006AD561 /* Build configuration list for PBXProject "ParkinsonBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31347B129A7CA6B006AD561 /* Debug */,
+				D31347B229A7CA6B006AD561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31347B329A7CA6B006AD561 /* Build configuration list for PBXNativeTarget "ParkinsonBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31347B429A7CA6B006AD561 /* Debug */,
+				D31347B529A7CA6B006AD561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31347B629A7CA6B006AD561 /* Build configuration list for PBXNativeTarget "ParkinsonBuddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31347B729A7CA6B006AD561 /* Debug */,
+				D31347B829A7CA6B006AD561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31347B929A7CA6B006AD561 /* Build configuration list for PBXNativeTarget "ParkinsonBuddyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D31347BA29A7CA6B006AD561 /* Debug */,
+				D31347BB29A7CA6B006AD561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F83733329E4A9B700E6D84D /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		3F83739329E7049600E6D84D /* XCRemoteSwiftPackageReference "MonthYearWheelPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bendodson/MonthYearWheelPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		D31347C629A7CADE006AD561 /* XCRemoteSwiftPackageReference "CareKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cbaker6/CareKit/";
+			requirement = {
+				branch = "2.1-slider";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F83733429E4A9B700E6D84D /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F83733329E4A9B700E6D84D /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+		3F83739429E7049600E6D84D /* MonthYearWheelPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F83739329E7049600E6D84D /* XCRemoteSwiftPackageReference "MonthYearWheelPicker" */;
+			productName = MonthYearWheelPicker;
+		};
+		D31347C729A7CADE006AD561 /* CareKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D31347C629A7CADE006AD561 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKit;
+		};
+		D31347C929A7CADE006AD561 /* CareKitFHIR */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D31347C629A7CADE006AD561 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitFHIR;
+		};
+		D31347CB29A7CADE006AD561 /* CareKitStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D31347C629A7CADE006AD561 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitStore;
+		};
+		D31347CD29A7CADE006AD561 /* CareKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D31347C629A7CADE006AD561 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D313478129A7CA69006AD561 /* Project object */;
+}
